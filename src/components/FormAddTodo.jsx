@@ -1,7 +1,8 @@
 import { useState } from "react"
+import useTodo from "../hooks/useTodo"
 
-function FormAddTodo(props) {
-  const {hdlAdd} = props
+function FormAddTodo() {
+  const {hdlAdd} = useTodo()
   const [input, setInput] = useState('')
 
   const hdlSubmit = (e) => {
@@ -12,7 +13,7 @@ function FormAddTodo(props) {
 
   return (
     <form className="form-add-todo" onSubmit={hdlSubmit}>
-      <input value={input} onChange={e=>setInput(e.target.value)} />
+      <input placeholder="Search.."value={input} onChange={e=>setInput(e.target.value)} />
       <button type="submit">Add</button>
     </form>
   )

@@ -4,84 +4,149 @@
   padding: 0;
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Heading Style */
+.h2 {
+  text-align: center;
+}
+
+/* Application Container */
 .app {
-  background: red;
+  background: #76dbf5;
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 30px;
 }
 
+/* Todo Application Container */
 .todo-app {
-  background: blue;
+  background: #87cefa;
   width: 600px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   overflow-y: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Dashboard Style */
 .dashboard {
-  background-color: skyblue;
-  height: 100px;
+  background-color: #68d4f8;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 8px ;
+  padding: 0 20px;
+  border: #333;
 }
 
-.form-add-todo, .todo-edit-form {
-  background-color: gold;
-  padding: 8px 16px;
-  display: flex;
-  gap: 2px;
+h2{
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
 }
 
-.form-add-todo > input, .todo-edit-form > [type=text]{
-  flex-grow : 8;
-  font-size: large;
-  padding: 4px 8px;
+/* Todo Form Style */
+.form-add-todo,
+.todo-edit-form {
+    background-color: #406fee;
+    padding: 12px 20px;
+    display: flex;
+    gap: 12px;
+    border-bottom: 2px solid #000;
+}
+
+.form-add-todo > input,
+.todo-edit-form > [type=text] {
+  height: 35px;
+  flex-grow: 8;
+  font-size: 14px;
+  padding: 10px 14px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
 }
 
 .form-add-todo > button {
-  flex-grow : 2;
+  flex-grow: 2;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
+/* Todo Container Style */
 .todo-container {
-  /* border: 1px dashed lime; */
-  padding: 8px 10px;
+  padding: 12px 16px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 12px;
 }
 
+/* Todo Item Style */
 .todo-item {
-  background-color: aqua;
-  padding: 4px 8px;
+  background-color: #ffffff;
+  height: 40px;
+  width: 550px;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
-  font-size: large;
+  align-items: center;
+  border-radius: 8px;
 }
 
-.todo-item p{
+.todo-item p {
   width: 80%;
   white-space: nowrap;
   overflow-x: hidden;
   text-overflow: ellipsis;
+  margin: 0;
 }
 
 .todo-item .btn-group {
   display: flex;
-  gap: 4px;
+  gap: 10px;
+  
+}
+
+.btn-cancel {
+  background-color: #ff6347; /* สีแดงอมเนื้อสำหรับปุ่ม Cancel */
 }
 
 .todo-item .btn-group a {
-  border: 1px solid silver;
-  padding: 2px 4px;
+  border: 2px solid #ccc;
+  padding: 8px 12px;
   cursor: pointer;
+  text-decoration: none;
+  color: #ff0000;
 }
 
+/* Completed Job Style */
 .job-done {
   text-decoration: line-through;
-  color: silver;
+  color: #696969;
 }
+
+/* สีของปุ่ม Edit */
+.btn--group2.btn--edit {
+  background-color: #ffd700; /* สีทอง */
+  color: #333; /* สีดำ */
+  width: 30px;
+}
+
+/* สีของปุ่ม Delete */
+.btn--group2.btn--delete {
+  background-color: #ff6347; /* สีแดงอมเนื้อ */
+  color: #fff; /* สีขาว */
+  width: 50px;
+}
+
+
+
+

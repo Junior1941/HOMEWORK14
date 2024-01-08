@@ -1,9 +1,12 @@
 import TodoApp from "./components/TodoApp"
+import { TodoContextProvider } from "./contexts/todoContext"
 
 function App() {
   return (
     <div className="app">
-      <TodoApp />
+      <TodoContextProvider>
+        <TodoApp />
+      </TodoContextProvider>
     </div>
   )
 }

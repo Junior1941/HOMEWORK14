@@ -1,56 +1,29 @@
 {
   "todos": [
     {
-      "id": 1,
       "todo": "Do something nice for someone I care about",
       "completed": true,
-      "userId": 26
+      "id": 3
     },
     {
       "todo": "Memorize the fifty states and their capitals",
       "completed": false,
-      "id": 2
-    },
-    {
-      "todo": "Watch a drama movie",
-      "completed": false,
-      "id": 3
-    },
-    {
-      "todo": "Contribute code or a monetary donation to an open-source software project",
-      "completed": false,
+      "user": 1,
       "id": 4
     },
     {
       "todo": "Solve a Rubik's cube",
       "completed": false,
-      "id": 5
-    },
-    {
-      "todo": "Learn HTML5",
-      "completed": true,
-      "userId": 1,
-      "id": 6
-    },
-    {
-      "todo": "Learn CSS",
-      "completed": true,
-      "id": 7
-    },
-    {
-      "todo": "Learn vite js",
-      "id": 9
-    },
-    {
-      "todo": "Learn Data structure",
-      "completed": false,
       "user": 1,
-      "id": 14
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "name": "andy"
     },
     {
-      "todo": "Homework 14",
-      "completed": true,
-      "id": 15
+      "name": "bobby"
     }
   ]
 }
